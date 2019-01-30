@@ -5,6 +5,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/recipes' do
+<<<<<<< HEAD
     @recipes = Recipe.all
     erb :index
   end
@@ -46,4 +47,9 @@ class ApplicationController < Sinatra::Base
     
     redirect '/recipes'
   end
+=======
+    @recipe = Recipe.all
+    erb :index
+  end
+>>>>>>> 095cf8d1d058d145d795af3e84db96c5049b415e
 end
